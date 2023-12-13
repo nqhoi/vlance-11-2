@@ -1,0 +1,19 @@
+
+body {
+  background: #FFF;
+}
+
+.header-top-wrap { background: #ccc; color: #FAFAFA;}
+.header-top-box { max-width: 1200px; margin: 0 auto; display : flex; gap: 20px; align-items: center; justify-content: flex-end; }
+.header-top-box > ul { display: flex; list-style: none; padding: 0; color: #FFF; text-transform: uppercase;}
+.header-top-box > ul > li { border-right: 1px solid #000; padding: 0 8px;}
+.header-top-box > ul > li:last-child { border-right: 0;}
+.header-top-box > ul > li > a {color: #FFF; text-decoration: none;}
+.header-top-box > div > a  { color: blue; font-weight: 700;}
+.header-top-box > div > a > img {margin-left: 8px;}
+.header-top-box02 { display: flex; align-items: center; }
+.header-top-box02 > div:first-child {display: flex; align-items: center; background: #393975; padding: 4px 8px}
+.header-top-box02 > div:first-child > span { margin-right: 4px; background: #393975; color: #FFF }
+.header-top-box02 > div:nth-child(2) { position: relative; display: inline-block;}
+.header-top-box02 > div:nth-child(2) > input {padding: 4px; padding-left: 8px; background: #ccc;}
+.header-top-box02 > div:nth-child(2) > img {position: absolute; top: 50%; right: 5px; transform: translate(-50%, -50%); cursor: pointer;}
