@@ -3,6 +3,8 @@ body {
   background: #FFF;
 }
 
+.header-wrap { padding-bottom: 16px; border-bottom: 2px solid blue}
+
 .header-top-wrap { background: #ccc; color: #FAFAFA;}
 .header-top-box { max-width: 1200px; margin: 0 auto; display : flex; gap: 20px; align-items: center; justify-content: flex-end; }
 .header-top-box > ul { display: flex; list-style: none; padding: 0; color: #FFF; text-transform: uppercase;}
@@ -11,9 +13,32 @@ body {
 .header-top-box > ul > li > a {color: #FFF; text-decoration: none;}
 .header-top-box > div > a  { color: blue; font-weight: 700;}
 .header-top-box > div > a > img {margin-left: 8px;}
-.header-top-box02 { display: flex; align-items: center; }
-.header-top-box02 > div:first-child {display: flex; align-items: center; background: #393975; padding: 4px 8px}
-.header-top-box02 > div:first-child > span { margin-right: 4px; background: #393975; color: #FFF }
-.header-top-box02 > div:nth-child(2) { position: relative; display: inline-block;}
-.header-top-box02 > div:nth-child(2) > input {padding: 4px; padding-left: 8px; background: #ccc;}
-.header-top-box02 > div:nth-child(2) > img {position: absolute; top: 50%; right: 5px; transform: translate(-50%, -50%); cursor: pointer;}
+
+.header-logo { max-width: 1200px; margin: 0 auto;}
+.header-logo > img {object-fit: cover;}
+
+.header-bottom-box { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; color: #000}
+.header-bottom-box ul:first-child { display: flex; list-style: none; padding: 0;}
+.header-bottom-box ul:first-child > li { margin-right: 30px;}
+.header-bottom-box ul:last-child { display: flex; }
+.header-bottom-box ul:last-child > li { margin-right: 30px;}
+.header-bottom-box ul:last-child > li::marker { color: blue;}
+
+.header-noname-wrap { padding: 8px 0; border-bottom: 1px solid #ccc;}
+.header-noname-box {max-width: 1200px; margin: 0 auto;}
+.header-noname-box > a {text-decoration: none;}
+
+.content-box {max-width: 1200px; margin: 0 auto; display: flex;}
+
+.sidebar-box { width: 20%; margin-right: 30px; }
+.sidebar-box > h3 {color: blue; margin: 16px 0;}
+.sidebar-box > ul { list-style: none; padding: 0}
+.sidebar-box > ul > li { padding: 12px; border-bottom: 1px solid #ccc;}
+.sidebar-box > ul > li:last-child {border: none; }
+.sidebar-box > ul > li:hover { background: blue; color: #FFF;}
+
+.content-box01 > h1 { margin: 16px 0; }
+.content-box01 > ul { list-style: circle;}
+.content-box01 > ul > li::marker { color: blue; font-size: 30px;}
+.content-box01 > ul > li > ul {padding-left: 20px;}
+.content-box01 > ul > li > ul > li::marker {color: #ccc; font-size: 15px;}
