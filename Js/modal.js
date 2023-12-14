@@ -7,8 +7,23 @@ $(document).ready(function () {
   });
 });
 
+// $(document).ready(function () {
+//   $(".bottom-wrap-box > ul > li").mouseenter(
+//     function () {
+//       console.log('test')
+//         $('#myModal').css("display", "block");
+//     },
+//   );
+// });
+
+$(document).ready(function () {
+  $(".modal-content").mouseleave(function () {
+    console.log("test");
+    $("#myModal").css("display", "none");
+  });
+});
+
 window.onclick = function (event) {
-  console.log(event)
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -22,8 +37,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(document).on("scroll", function () {
-    const positionFooter = $(".footer-bottom-box-con").offset()
-    console.log(positionFooter.top, $(this).scrollTop())
+    const positionFooter = $(".footer-bottom-box-con").offset();
+    console.log(positionFooter.top, $(this).scrollTop());
     if ($(this).scrollTop() < positionFooter.top) {
       $("#scroll-top").fadeIn();
     } else {

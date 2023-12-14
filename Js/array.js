@@ -119,6 +119,48 @@ let contentBoxNews = `
     ).join("")}
   `;
 
+// $(document).ready(function () {
+//   const $ulRoot = $("<ul ></ul>");
+//   const mockData = [
+//     {
+//       imageSrc: "./image/main/img-thumb01.jpg",
+//       title: "데모 title",
+//       description: "데모 Sub Description",
+//     },
+//     {
+//       imageSrc: "./image/main/img-thumb02.jpg",
+//       title: "데모 title",
+//       description: "데모 Sub Description",
+//     },
+//     {
+//       imageSrc: "./image/main/img-thumb03.jpg",
+//       title: "데모 title",
+//       description: "데모 Sub Description",
+//     },
+//   ];
+
+//   $.each(mockData, function (index, item) {
+//     const $li = $("<li></li>");
+
+//     const $imageLink = $("<a href='#!' title='go to Image'><img src='" + item.imageSrc + "' alt='image-demo2'></a>");
+//     const $div = $("<div></div>");
+//     const $titleLink = $("<a href='#!' title='go to content'><h4>" + item.title + "</h4></a>");
+//     const $description = $("<p>" + item.description + "</p>");
+
+//     $div.append($titleLink);
+//     $div.append($description);
+
+//     $li.append($imageLink);
+//     $li.append($div);
+
+//     $ulRoot.append($li);
+//   });
+
+//   // Đặt nội dung của ulRoot vào body (hoặc bất kỳ nơi nào bạn muốn)
+//   $(".content-box-news").append($ulRoot);
+// });
+
+
 let modalMenuContent = `
   ${mockDataMenu.map((data) => `
     <div>
@@ -141,7 +183,6 @@ let footerBox =  `
     </ul>
   `).join("")}
   `;
-
 
 
 contentBoxNoticesElement.innerHTML = contentBoxNotices;
