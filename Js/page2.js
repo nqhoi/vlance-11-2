@@ -4,13 +4,6 @@ $(document).ready(function () {
   });
 });
 
-
-$(document).ready(function(){
-  $("input").change(function(){
-    alert("The text has been changed.");
-  });
-});
-
  // Sample data for sidebar
  var menuData = [
   { id: 'data1', label: 'Menu Item 1', contentFile: 'contentPage2.html' },
@@ -49,33 +42,25 @@ function loadContent(file) {
 }
 
 $(document).ready(function () {
-  // Đối tượng headerBottomBox
-  var $headerBottomBox = $("<div class='header-bottom-box'></div>");
+  const $headerBottomBox = $("<div class='header-bottom-box'></div>");
 
-  // Tạo mảng dữ liệu giả mạo
   var mockData = [
     ["데모", "데모", "데모", "데모", "데모", "데모"],
     ["데모", "데모"]
   ];
 
-  // Lặp qua mảng dữ liệu giả mạo
   $.each(mockData, function (index, data) {
-    // Tạo phần tử ul
     var $ul = $("<ul></ul>");
 
-    // Lặp qua mảng dữ liệu con và tạo các phần tử li và a
     $.each(data, function (index, item) {
       var $li = $("<li><a href='#!' title='go to ...'>" + item + "</a></li>");
 
-      // Thêm li vào ul
       $ul.append($li);
     });
 
-    // Thêm ul vào headerBottomBox
     $headerBottomBox.append($ul);
   });
 
-  // Đặt nội dung của headerBottomBox vào body (hoặc bất kỳ nơi nào bạn muốn)
   $(".header-bottom-wrap").append($headerBottomBox);
 });
 

@@ -3,100 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Slide In/Out</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: #333;
-            overflow: hidden;
-        }
-
-        li {
-            float: left;
-            position: relative;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: #111;
-        }
-
-        .sub-menu {
-            display: none;
+        .slider-container {
             position: absolute;
-            background-color: rgba(0, 0, 0, 0.8); /* Màu nền với độ trong suốt */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            top: 0;
+            right: -300px; /* Đẩy div ra khỏi màn hình bên phải */
+            height: 100%;
+            width: 300px;
+            background-color: #3498db;
+            transition: right 0.3s ease; /* Thêm hiệu ứng chuyển động */
         }
 
-        .sub-menu.show {
-            display: block;
-        }
-
-        .sub-menu li {
-            float: none;
-            display: block;
-            text-align: left;
-            opacity: 1; /* Khôi phục độ trong suốt của nội dung sub-menu */
-        }
-
-        .sub-menu a {
-            padding: 12px 16px;
-            color: white;
-            text-decoration: none;
-        }
-
-        .sub-menu a:hover {
-            background-color: #555;
+        .button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li class="has-submenu">
-            <a href="#about">About</a>
-            <ul class="sub-menu">
-                <li><a href="#team">Our Team</a></li>
-                <li><a href="#history">History</a></li>
-            </ul>
-        </li>
-        <li class="has-submenu">
-            <a href="#services">Services</a>
-            <ul class="sub-menu">
-                <li><a href="#web">Web Design</a></li>
-                <li><a href="#graphic">Graphic Design</a></li>
-            </ul>
-        </li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="slider-container">
+        <!-- Nội dung bạn muốn hiển thị trong slider -->
+        <p>This is some content inside the slider.</p>
+    </div>
+
+    <button class="button" onclick="toggleSlider()">Toggle Slider</button>
 
     <script>
-        $(document).ready(function () {
-            $('.has-submenu').hover(
-                function () {
-                    $(this).find('.sub-menu').addClass('show');
-                },
-                function () {
-                    $(this).find('.sub-menu').removeClass('show');
-                }
-            );
-        });
+        function toggleSlider() {
+            var slider = document.querySelector('.slider-container');
+            slider.style.right = (slider.style.right === '0px' || slider.style.right === '') ? '-300px' : '0px';
+        }
     </script>
 
 </body>
