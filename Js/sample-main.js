@@ -3,16 +3,18 @@ $(document).ready(function () {
     infinite: false,
     slidesToShow: 2,
     slidesToScroll: 2,
-    prevArrow: '<div class="slide-arrow prev-arrow"><img src="./image/iii/icon-prev-gray.png" alt="prev slider"></div>',
-    nextArrow: '<div class="slide-arrow next-arrow"><img src="./image/iii/icon-next-gray.png" alt="next slider"></div>',
-	});
-	$(".slick-list").on("afterChange", function () {
-		if ($(".slick-prev").hasClass("slick-disabled")) {
-			$(".prev-btn").addClass("slick-disabled");
-		} else {
-			$(".prev-btn").removeClass("slick-disabled");
-		}
-	});
+    prevArrow:
+      '<div class="slide-arrow prev-arrow"><img src="./image/iii/icon-prev-gray.png" alt="prev slider"></div>',
+    nextArrow:
+      '<div class="slide-arrow next-arrow"><img src="./image/iii/icon-next-gray.png" alt="next slider"></div>',
+  });
+  $(".slick-list").on("afterChange", function () {
+    if ($(".slick-prev").hasClass("slick-disabled")) {
+      $(".prev-btn").addClass("slick-disabled");
+    } else {
+      $(".prev-btn").removeClass("slick-disabled");
+    }
+  });
 });
 
 $(document).ready(function () {
@@ -20,35 +22,37 @@ $(document).ready(function () {
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow: '<div class="slide-arrow prev-arrow"><img src="./image/main/img-pre-arr.png" alt="image-pre"></div>',
-    nextArrow: '<div class="slide-arrow next-arrow"><img src="./image/main/img-next-arr.png" alt="next-visual"></div>',
-	});
-	$(".slick-list").on("afterChange", function () {
-		if ($(".slick-prev").hasClass("slick-disabled")) {
-			$(".prev-btn").addClass("slick-disabled");
-		} else {
-			$(".prev-btn").removeClass("slick-disabled");
-		}
-	});
+    prevArrow:
+      '<div class="slide-arrow prev-arrow"><img src="./image/main/img-pre-arr.png" alt="image-pre"></div>',
+    nextArrow:
+      '<div class="slide-arrow next-arrow"><img src="./image/main/img-next-arr.png" alt="next-visual"></div>',
+  });
+  $(".slick-list").on("afterChange", function () {
+    if ($(".slick-prev").hasClass("slick-disabled")) {
+      $(".prev-btn").addClass("slick-disabled");
+    } else {
+      $(".prev-btn").removeClass("slick-disabled");
+    }
+  });
 });
 
 $(document).ready(function () {
-	$(".visual03-items").slick({
+  $(".visual03-items").slick({
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: '<div class="slide-arrow prev-arrow"><img src="./image/iii/icon-prev-gray.png" alt="prev slider"></div>',
-    nextArrow: '<div class="slide-arrow next-arrow"><img src="./image/iii/icon-next-gray.png" alt="next slider"></div>',
-
-
-	});
-	$(".slick-list").on("afterChange", function () {
-		if ($(".slick-prev").hasClass("slick-disabled")) {
-			$(".prev-btn").addClass("slick-disabled");
-		} else {
-			$(".prev-btn").removeClass("slick-disabled");
-		}
-	});
+    prevArrow:
+      '<div class="slide-arrow prev-arrow"><img src="./image/iii/icon-prev-gray.png" alt="prev slider"></div>',
+    nextArrow:
+      '<div class="slide-arrow next-arrow"><img src="./image/iii/icon-next-gray.png" alt="next slider"></div>',
+  });
+  $(".slick-list").on("afterChange", function () {
+    if ($(".slick-prev").hasClass("slick-disabled")) {
+      $(".prev-btn").addClass("slick-disabled");
+    } else {
+      $(".prev-btn").removeClass("slick-disabled");
+    }
+  });
 });
 
 window.onscroll = function () {
@@ -56,16 +60,16 @@ window.onscroll = function () {
 };
 
 //change English to Korean
-$(document).ready(function(){
-  $(".header-right-box > ul >li:nth-child(3) a").click(function(){
+$(document).ready(function () {
+  $(".header-right-box > ul >li:nth-child(3) a").click(function () {
     const currentText = $(this).text();
-    if(currentText === "EngLish"){
-      $(this).text("Korean")
-    }else{
-      $(this).text("EngLish")
+    if (currentText === "EngLish") {
+      $(this).text("Korean");
+    } else {
+      $(this).text("EngLish");
     }
-  })
-})
+  });
+});
 
 function headerSticky() {
   const heightHeader = 85;
@@ -85,34 +89,60 @@ function headerSticky() {
 function toggleSlider1() {
   const slider = document.querySelector(".quick-menu-box.type01 .menu-data");
   slider.style.visibility =
-    (slider.style.display === "hidden" || slider.style.display === "") &&
+    (slider.style.visibility === "hidden" || slider.style.visibility === "") &&
     slider.classList.toggle("hide");
 }
 
 function toggleSlider2() {
   const slider = document.querySelector(".quick-menu-box.type02 .menu-data");
   slider.style.visibility =
-    (slider.style.display === "hidden" || slider.style.display === "") &&
+    (slider.style.visibility === "hidden" || slider.style.visibility === "") &&
     slider.classList.toggle("hide");
 }
 
 //dropdown header
-$(document).ready(function(){
-    $(".header-menu > ul > li").click(function(){
-      $(".dropdown-menu").toggle();
-     })
-    });
+// $(document).ready(function () {
+//   $(".header-menu > ul > li").click(function () {
+//     $(".dropdown-menu").toggle();
+//   });
+// });
+
+const mockMenu = ["type01", "type02", "type03", "type04"];
+
+function toggleMenu() {
+  // console.e/
+  $(".dropdown-menu.typ01").toggle();
+}
+
+function toggleMenu02() {
+  // console.e/
+  $(".dropdown-menu.typ02").toggle();
+}
+
+function toggleMenu03() {
+  // console.e/
+  $(".dropdown-menu.typ03").toggle();
+}
 
 //dropdown footer
-$(document).ready(function(){
-    $(".right-box").click(function(){
-      $(".right-box-dropdown").toggle();
-})});
+$(document).ready(function () {
+  $(".right-box").click(function () {
+    $(".right-box-dropdown").toggle();
+  });
+});
 
 //click ra ngoài hide dropdown
-$(document).on("click", function(event){
-      const dropdown = $(".right-box");
-      if (!dropdown.is(event.target) && dropdown.has(event.target).length === 0) {
-        $(".right-box-dropdown").hide();
-      }
-    });
+$(document).on("click", function (event) {
+  const dropdown = $(".right-box");
+  if (!dropdown.is(event.target) && dropdown.has(event.target).length === 0) {
+    $(".right-box-dropdown").hide();
+  }
+});
+
+function toggleMobileMenu() {
+  var menu = document.querySelector('.header-menu');
+  menu.style.display = (menu.style.display === 'block' || menu.style.display === '') ? 'none' : 'block';
+}
+
+document.querySelector('.header-menu-tablet').addEventListener('click', toggleMobileMenu);
+// document.querySelector('.header-menu').addEventListener('click', toggleMobileMenu);
