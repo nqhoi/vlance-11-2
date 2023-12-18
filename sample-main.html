@@ -14,145 +14,127 @@
 </head>
 
 <body>
-  <div class="" style=" margin-bottom: 50px;">
-    <header class="header-wrap" id="header">
-      <div class="header-box">
-        <a href="#!" title="Go to">
-          <img src="./image/iii/logo-2.jpg" alt="go to home page">
-        </a>
-        <div class="header-menu">
-          <ul>
-            <li onclick="toggleMenu()">
-              <h3>이화소개</h3>
-              <div class="dropdown-menu typ01">
-                <ul>
-                  <li><a href="#" title="go to">
-                      <h4> 사이트맵 1</h4>
-                    </a></li>
-                  <li><a href="#" title="go to">
-                      <h4> 사이트맵 1</h4>
-                    </a></li>
-                  <li><a href="#" title="go to">
-                      <h4> 사이트맵 1</h4>
-                    </a></li>
-                  <li><a href="#" title="go to">
-                      <h4> 사이트맵 1</h4>
-                    </a></li>
-                </ul>
-              </div>
-            </li>
-            <li onclick="toggleMenu02()">
-              <h3>대학생활</h3>
-              <div class="dropdown-menu typ02">
-                <ul>
-                  <li><a href="#" title="go to">
-                      <h4> 대학생활 2</h4>
-                    </a></li>
-                  <li><a href="#" title="go to">
-                      <h4> 대학생활 2</h4>
-                    </a></li>
-                  <li><a href="#" title="go to">
-                      <h4> 대학생활 2</h4>
-                    </a></li>
-                  <li><a href="#" title="go to">
-                      <h4> 대학생활 2</h4>
-                    </a></li>
-                  <li><a href="#" title="go to">
-                      <h4> 대학생활 2</h4>
-                    </a></li>
-                </ul>
-              </div>
-            </li>
-            <li onclick="toggleMenu03()">
-              <h3>대학·대학원
-                <div class="dropdown-menu typ03">
-                  <ul>
-                    <li><a href="#" title="go to">
-                        <h4> 대학·대학원 2</h4>
-                      </a></li>
-                    <li><a href="#" title="go to">
-                        <h4> 대학·대학원 2</h4>
-                      </a></li>
-                    <li><a href="#" title="go to">
-                        <h4> 대학·대학원 2</h4>
-                      </a></li>
-                  </ul>
-                </div>
-              </h3>
-            </li>
-            <li>
-              <h3>연구·산학</h3>
-            </li>
-            <li>
-              <h3>학사안내</h3>
-            </li>
-            <li>
-              <h3>대학생활</h3>
-            </li>
-          </ul>
+  <div class="wrap">
+    <div class="visual-wrap">
+      <div class="visual04-items">
+        <div class="visual04-items-image">
+          <a href="#!" title="next slider">
+            <img src="./image/iii/image-visual.jpg" alt="banner-1" />
+          </a>
         </div>
-        <div class="header-right-box">
-          <ul>
-            <li><a href="#!" title="go to">Home</a></li>
-            <li><a href="#!" title="go to">사이트맵</a></li>
-            <li><a href="#!" title="go to">EngLish</a></li>
-            <li><a href="#!" title="go to">사이트맵</a></li>
-          </ul>
+        <div class="visual04-items-image">
+          <a href="#!" title="prev slider">
+            <img src="./image/iii/img-visual-2.jpg" alt="banner-2  " />
+          </a>
         </div>
-
-        <div class="header-menu-tablet">
-          <img src="./image/iii/ico-menu2.png" alt="header-menu">
+        <div class="visual04-items-image">
+          <a href="#!" title="go to">
+            <img src="./image/iii/img-visual-4.jpg" alt="banner-3" />
+          </a>
         </div>
       </div>
-    </header>
+    </div>
 
-    <div class="visual-wrap">
-      <div class="visual-items">
-        <div class="visual-items-image">
-          <a href="#!" title="go to">
-            <div>
-              <img src="./image/iii/sample-side-2.jpg" alt="image-visual">
-              <h1>통합검색</h1>
-              <h3>통합검색 sub
-                <img src="./image/main/img-next-arr.png" alt="">
-              </h3>
-            </div>
+    <div class="visual-content">
+      <header class="header-wrap" id="header">
+        <div class="header-box">
+          <a href="#" title="Go to" class="header-logo">
+            <img src="./image/iii/sample-main-logo.jpg" alt="go to home page">
           </a>
-        </div>
-        <div class="visual-items-image">
-          <a href="#!" title="go to">
-            <div>
-              <img src="./image/iii/sample-side-3.jpg" alt="image-visual">
-              <h1>메뉴검색</h1>
-            </div>
+          <a href="#" title="Go to" class="header-logo-fixed">
+            <img src="./image/iii/logo-2.jpg" alt="go to home page">
           </a>
+          <div class="header-menu">
+            <ul>
+              <li onclick="toggleMenu('typ01')">
+                <h3>이화소개</h3>
+                <div class="dropdown-menu typ01">
+                  <ul>
+                  </ul>
+                </div>
+              </li>
+              <li onclick="toggleMenu('typ02')">
+                <h3>대학생활</h3>
+                <div class="dropdown-menu typ02">
+                  <ul>
+                  </ul>
+                </div>
+              </li>
+              <li onclick="toggleMenu('typ03')">
+                <h3>대학·대학원
+                  <div class="dropdown-menu typ03">
+                    <ul>
+                    </ul>
+                  </div>
+                </h3>
+              </li>
+              <li onclick="toggleMenu('typ04')">
+                <h3>연구·산학</h3>
+                <div class="dropdown-menu typ04">
+                  <ul>
+                  </ul>
+                </div>
+              </li>
+              <li onclick="toggleMenu('typ05')">
+                <h3>학사안내</h3>
+                <div class="dropdown-menu typ05">
+                  <ul>
+                  </ul>
+                </div>
+              </li>
+              <li onclick="toggleMenu('typ06')">
+                <h3>대학생활</h3>
+                <div class="dropdown-menu typ06">
+                  <ul>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header-right-box">
+            <ul>
+              <li><a href="#" title="go to Home">Home</a></li>
+              <li><a href="#!" title="사이트맵">로그인</a></li>
+              <li><a href="#!" title="EngLish">EngLish</a></li>
+              <li><a href="#!" title="사이트맵">여자 대학</a></li>
+            </ul>
+          </div>
 
+          <div class="header-menu-tablet">
+            <img src="./image/iii/ico-menu2.png" alt="header-menu">
+          </div>
         </div>
-        <div class="visual-items-image">
-          <a href="#!" title="go to">
+      </header>
+
+      <div class="visual-content-box">
+        <a href="#!" title="통합검색">
+          <div>
+            <img src="./image/iii/sample-main-visual-1.jpg" alt="채용안내">
+            <h1>채용안내</h1>
+            <h3>더 찾아 봐
+              <img src="./image/main/img-next-arr.png" alt="더 찾아 봐">
+            </h3>
+          </div>
+        </a>
+        <a href="#!" title="인사말">
+          <div>
+            <img src="./image/iii/sample-side-2.jpg" alt="인사말">
+            <h1>인사말</h1>
+          </div>
+        </a>
+        <a href="#!" title="전화번호부">
+          <div>
+            <img src="./image/iii/sample-side-3.jpg" alt="전화번호부">
+            <h1>전화번호부</h1>
+          </div>
+          <a href="#!" title="사이트맵 FAQ">
             <div>
-              <img src="./image/iii/sample-side-4.jpg" alt="image-visual">
-              <h1>전화번호부</h1>
-            </div>
-          </a>
-        </div>
-        <div class="visual-items-image">
-          <a href="#!" title="go to">
-            <div>
-              <img src="./image/iii/sample-side-2.jpg" alt="image-visual">
+              <img src="./image/iii/sample-side-4.jpg" alt="전화번호부">
               <h1>사이트맵 FAQ</h1>
             </div>
           </a>
-        </div>
-        <div class="visual-items-image">
-          <a href="#!" title="go to">
-            <div>
-              <img src="./image/iii/sample-side-2.jpg" alt="image-visual">
-              <h1>사이트맵</h1>
-            </div>
-          </a>
-        </div>
       </div>
+
       <div class="quick-menu-box type01">
         <div class="menu-title" onclick="toggleSlider1()">
           <h3>Quick Menu</h3>
@@ -160,18 +142,22 @@
         </div>
         <div class="menu-data">
           <ul>
-            <li><a href="#" title="go to 사이트맵">입시부정/a></li>
-            <li><a href="#" title="go to 사이트맵">EWHA WIFI/a></li>
-            <li><a href="#" title="go to 사이트맵">성적입력</a></li>
-            <li><a href="#" title="go to 사이트맵">/이의신청</a></li>
-            <li><a href="#" title="go to 사이트맵">성적입력 2</a></li>
-            <li><a href="#" title="go to 사이트맵">이의신청 2</a></li>
-            <li><a href="#" title="go to 사이트맵">사이트맵 2</a></li>
-            <li><a href="#" title="go to 사이트맵">사이트맵</a></li>
+            <li><a href="#" title="g입시부정">입시부정/a></li>
+            <li><a href="#" title="EWHA WIFI/a>">EWHA WIFI/a></li>
+            <li><a href="#" title="성적입력">성적입력</a></li>
+            <li><a href="#" title="이의신청">/이의신청</a></li>
+            <li><a href="#" title="사이트맵">성적입력 2</a></li>
+            <li><a href="#" title="이의신청">이의신청 2</a></li>
+            <li><a href="#" title="사이트맵">사이트맵 2</a></li>
+            <li><a href="#" title="사이트맵">사이트맵</a></li>
           </ul>
         </div>
       </div>
     </div>
+
+  </div>
+  </div>
+  </div>
   </div>
 
   <div class="content-wrap">
@@ -179,15 +165,15 @@
       <div class="content-box-notice">
         <div class="notice-title">
           <h1>NOTICE</h1>
-          <a href="#!" title="go to more"><img src="/train/image/iii/sample-more.jpg" alt="more"></a>
+          <a href="#!" title="go to more"><img src="image/iii/sample-more.jpg" alt="more"></a>
         </div>
         <div class="" style="display: flex;">
           <div class="sidebar">
             <ul>
-              <li><a href="#!" title="go to">사이트맵</a></li>
-              <li><a href="#!" title="go to">사이트맵</a></li>
-              <li><a href="#!" title="go to">사이트맵</a></li>
-              <li><a href="#!" title="go to">사이트맵</a></li>
+              <li><a href="#!" title="학습정보">학습정보 </a></li>
+              <li><a href="#!" title="go to">사이트맵 2</a></li>
+              <li><a href="#!" title="소식">소식</a></li>
+              <li><a href="#!" title="업무 설명서">업무 설명서</a></li>
             </ul>
           </div>
           <ul>
@@ -225,28 +211,21 @@
       <div class="content-box02">
         <div class="content-box02-video">
           <div>
-            <h2>사이트맵 Video</h2>
+            <h2>광고 필름</h2>
             <a href="#" title="go to"> <img src="./image/iii/sample-more.jpg" alt="go to"></a>
           </div>
           <div class="video-container">
-            <!-- <iframe width="100%" height="250" src="https://youtu.be/9mA7h1jfxc8?t=44" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe> -->
             <iframe width="100%" height="250" src="https://www.youtube.com/embed/9mA7h1jfxc8?si=0SXMbeISMHesey28"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-          <!-- <video width="100%" height="250" controls>
-            <source src="https://www.youtube.com/watch?v=tlnzq3xNPHk" type="video/mp4">
-            Your browser does not support the video tag.
-          </video> -->
+
           <p>헌 옷 기부하면</p>
         </div>
         <div class="content-box02-type02">
           <div>
-            <h2>사이트맵</h2>
+            <h2>도서관</h2>
             <a href="#" title="go to">
               <img src="./image/iii/sample-more.jpg" alt="go to" /></a>
           </div>
